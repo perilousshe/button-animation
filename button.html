@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button animation</title>
+    <style>
+        
+        button{
+            padding:15px;
+            border-radius:15px;
+            border-width:5px;
+            background:black;
+           display: flex;
+           margin: auto;
+            border-image-slice:4;
+            border-image-source:linear-gradient(45deg,red,blue,yellow,green);
+            color:white;
+            margin-top:200px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        button:hover{
+            animation:color 1s ease-in infinite;
+        }
+        @keyframes color{
+         0%{
+            border-image-source:linear-gradient(30deg,red,blue,yellow,green);
+         }
+         25%{
+            border-image-source:linear-gradient(45deg,red,blue,yellow,green);
+         }
+         35%{
+            border-image-source:linear-gradient(60deg,red,blue,yellow,green);
+         }
+         50%{
+            border-image-source:linear-gradient(90deg,red,blue,yellow,green);
+         }
+         75%{
+            border-image-source:linear-gradient(120deg,red,blue,yellow,green);
+         }
+         85%{
+            border-image-source:linear-gradient(130deg,red,blue,yellow,green);
+         }
+         95%{
+            border-image-source:linear-gradient(140deg,red,blue,yellow,green);
+         }
+         100%{
+            border-image-source:linear-gradient(150deg,red,blue,yellow,green);
+         }
+         120%{
+            border-image-source:linear-gradient(160deg,red,blue,yellow,green);
+         }
+        }
+    </style>
+</head>
+<body>
+    <a href="#"><button>Start Coding</button></a>
+</body>
+</html>
